@@ -9,7 +9,7 @@
 
 ### What Is Web Cache Deception?
 
-Web Cache Deception (WCD) is an attack that tricks a caching layer — a CDN, reverse proxy, or similar intermediary — into storing and serving a victim's private, authenticated response as if it were a public, cacheable static asset. The attacker then retrieves that cached response directly, bypassing any authentication entirely.
+Web Cache Deception (WCD) is an attack that tricks a caching layer a CDN, reverse proxy, or similar intermediary into storing and serving a victim's private, authenticated response as if it were a public, cacheable static asset. The attacker then retrieves that cached response directly, bypassing any authentication entirely.
 
 The reason this works is a fundamental architectural mismatch: **the origin server and the cache interpret the same URL differently**. Neither component is obviously broken in isolation. The origin correctly identifies and serves dynamic, user-specific content. The cache correctly stores responses it believes to be static. The problem only emerges at their intersection — which is exactly what makes WCD tricky to catch in code review.
 
