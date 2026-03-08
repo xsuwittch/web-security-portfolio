@@ -90,6 +90,4 @@ This applied a 100% discount  a field never meant to be user-controlled.
 |------|---------|
 | Burp Suite (Repeater + Intruder) | Interact with and fuzz endpoints |
 | Param Miner BApp | Discover hidden/undocumented parameters |
-| JS Link Finder BApp | Extract API references from JavaScript files |
-| Content Type Converter BApp | Switch payloads between JSON and XML |
 | Burp Scanner | Crawl app and audit OpenAPI documentation |
