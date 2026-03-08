@@ -31,7 +31,7 @@ Framework auto-binds request fields to internal object fields — attacker can m
 
 ## Tools
 | Tool | Use |
-|------|-----|
+||-|
 | Burp Scanner | Crawl & find endpoints |
 | Burp Intruder | Brute-force methods/params |
 | Param Miner | Discover hidden params |
