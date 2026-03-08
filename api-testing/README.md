@@ -7,21 +7,21 @@
 
 ## Endpoints & Methods
 - Test ALL HTTP methods per endpoint (GET, POST, PATCH, DELETE, OPTIONS)
-- Change `Content-Type` header — may bypass defenses or expose different behavior
+- Change `Content-Type` header  may bypass defenses or expose different behavior
 - Use Burp Intruder + wordlists to brute-force hidden endpoints
 
 ## Hidden Parameters
-- **Param Miner** — guesses up to 65k param names
-- Compare PATCH/POST fields vs GET response — extra fields in GET may be writable
+- **Param Miner**  guesses up to 65k param names
+- Compare PATCH/POST fields vs GET response  extra fields in GET may be writable
 
 ## Mass Assignment
-Framework auto-binds request fields to internal object fields — attacker can modify fields never meant to be user-controlled.
+Framework auto-binds request fields to internal object fields  attacker can modify fields never meant to be user-controlled.
 
 **How to test:**
 1. Send invalid value → check if behavior changes
 2. If yes, send malicious value (e.g. `"isAdmin": true`)
 
-> `"default: 0"` is NOT a security control — it only fills missing fields at creation, it does NOT block values you explicitly send.
+> `"default: 0"` is NOT a security control  it only fills missing fields at creation, it does NOT block values you explicitly send.
 
 ## Prevention
 - Allowlist writable fields, blocklist sensitive ones
