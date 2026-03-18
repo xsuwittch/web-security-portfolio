@@ -1,7 +1,7 @@
 # Web Security Portfolio
 
 Practical web application security research through hands-on labs.
-All writeups are original — based on my own notes, methodology, 
+All writeups are original based on my own notes, methodology, 
 and analysis rather than copied walkthroughs.
 
 
